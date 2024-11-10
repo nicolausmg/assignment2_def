@@ -1,6 +1,6 @@
 import pandas as pd
 
-def filter_expenses(expense_df, start_date=None, end_date=None):
+def filter_expenses(expense_df, start_date=None, end_date=None, category=None, min_amount=None, max_amount=None):
     """
     Filters the expense DataFrame based on the provided criteria.
 
@@ -22,5 +22,13 @@ def filter_expenses(expense_df, start_date=None, end_date=None):
     if end_date:
         filtered_df = filtered_df[filtered_df['date'] <= end_date]
 
+    if category:
+        filtered_df = filtered_df[filtered_df['category'] == category]
+
+    if min_amount is not None:
+        filtered_df = filtered_df[filtered_df['amount'] >= min_amount]
+    if max_amount is not None:
+        filtered_df = filtered_df[filtered_df['amount'] <= max_amount]
 
     return filtered_df
+
