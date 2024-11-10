@@ -20,10 +20,9 @@ def add_income_entry(income_df):
     date = input("Enter the income date (DD-MM-YYYY): ").strip()
 
     description = input("Enter a description for the income: ").strip()
-    amount = float(input("Enter the income amount (Negative if it is an expense): ")).strip()
+    amount = float(input("Enter the income amount (Negative if it is an expense): ").strip())
     category = input("Enter the category for the income: ").strip()
 
     new_income = pd.DataFrame({'date': [date], 'description': [description], 'amount': [amount], 'category': 
 [category]})
     return pd.concat([income_df, new_income], ignore_index=True)
-
