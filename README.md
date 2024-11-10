@@ -1,8 +1,7 @@
-# assignment2_def
-
 Financial Tracker
  
-This repository provides a simple financial tracking tool built with Python and pandas. The tool allows users to log, filter, and analyze income and expense data, helping track their financial balance over time.
+This repository provides a simple financial tracking tool built with Python and pandas. The tool allows users to log, filter, and analyze income and 
+expense data, helping track their financial balance over time.
  
 Overview
  
@@ -11,4 +10,6 @@ The tool includes functions for:
 ​2.​Adding Entries:
 ​•​Income Entries: Allows users to add income records with a date, description, amount, and category.
 ​•​Expense Entries: Similarly, users can log expenses with detailed descriptions, dates, categories, and amounts.
-​3.​Filtering Expenses: Filters expense records by date.
+​3.​Filtering Expenses: Filters expense records by criteria such as date range, category, minimum amount, and maximum amount, providing a flexible way to 
+view specific data subsets.
+
